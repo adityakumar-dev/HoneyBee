@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #FFD54F;
+  --secondary: #ffffff;
+  --dull : #E0C98D;
 }
 
 @theme inline {
@@ -18,9 +23,26 @@
     --foreground: #ededed;
   }
 }
-
+@font-face {
+  font-family: 'Saturday';
+  src: url('/fonts/Saturday.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background: var(--secondary);
+  position: relative;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Ensure content is positioned properly relative to the background */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+
