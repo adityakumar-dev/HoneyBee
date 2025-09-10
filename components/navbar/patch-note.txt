@@ -1,0 +1,1 @@
+// Patch failed due to duplicate path error. Let's try a single, focused patch for the user icon dropdown only.
