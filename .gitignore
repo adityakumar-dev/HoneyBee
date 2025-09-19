@@ -1,6 +1,9 @@
 # Ignore environment files for both frontend and backend
 .env
 backend/.env
+# Ignore environment files for both frontend and backend
+.env
+backend/.env
 backend/node_modules
 node_modules
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.

@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Ignore frontend .env as well
+/frontend/.env
+/frontend/.env.*
+/backend/.env
+/backend/.env.*
