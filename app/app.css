@@ -1,58 +1,111 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .background {
-    position: absolute;
-    left: -10vw;
-  
-    width: 150vh;   
-    height: 150vh;
-    
-    z-index: -1;
-  
-    background: radial-gradient(
-      circle at 30% 60%,
-      rgba(247, 200, 72, 0.8) 0%,
-      rgba(255, 245, 200, 0.3) 40%,
-      rgba(255, 255, 255, 1) 75%,
-      rgba(255, 255, 255, 0) 100%
-    );
+  position: absolute;
+  left: -10vw;
+  width: 150vh;   
+  height: 150vh;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 30% 60%,
+    rgba(247, 200, 72, 0.8) 0%,
+    rgba(255, 245, 200, 0.3) 40%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.background-2 {
+  position: absolute;
+  top: -25vh;
+  right: -10vw;
+  width: 100vw;
+  height: 150vh;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 80% 60%,
+    rgba(247, 200, 72, 0.7)  0% ,
+    rgba(255, 245, 200, 0.3) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.background-3 {
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/beehive.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 90vh;
   }
   
+  .background {
+    width: 120vh;
+    height: 120vh;
+    left: -5vw;
+  }
   
   .background-2 {
-    position: absolute;
-    top: -25vh;
-    right: -10vw;
-  
-    width: 100vw;
-    height: 150vh;
-  
-    z-index: -1;
-    pointer-events: none;
-  
-    background: radial-gradient(
-      circle at 80% 60%,
-      rgba(247, 200, 72, 0.7)  0% ,
-      rgba(255, 245, 200, 0.3) 40%,
-      rgba(255, 255, 255, 0) 100%
-    
-      );
+    top: -20vh;
+    right: -5vw;
+    width: 90vw;
+    height: 120vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 100vh;
+    height: auto;
   }
   
-  .background-3 {
-    position: absolute;
-    bottom: 0;
-    z-index: -10;
-    left: 0;
+  .background {
+    width: 100vh;
+    height: 100vh;
+    left: -20vw;
+    top: -10vh;
+  }
+  
+  .background-2 {
+    top: -15vh;
+    right: -20vw;
     width: 100vw;
     height: 100vh;
-    background-image: url('/beehive.png');
-    background-size: cover;
-    background-position: center;
   }
+}
 
-  .hero-container {
-    width: calc(100vw - 10vw);
-    margin: 0 5vw;
-    height: calc(100vh - 120px);
-    display: flex;
-    align-items: center;
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 100vh;
+    height: auto;
   }
+  
+  .background {
+    width: 80vh;
+    height: 80vh;
+    left: -30vw;
+    top: -5vh;
+  }
+  
+  .background-2 {
+    top: -10vh;
+    right: -30vw;
+    width: 120vw;
+    height: 80vh;
+  }
+}
